@@ -42,6 +42,7 @@ Este dashboard ajuda a responder perguntas como:
 - Qual o tempo médio de entrega?
 - Quais fatores impactam a performance?
 - Quais entregadores e restaurantes se destacam?
+- Qual o impacto na avaliação do usuário
 """
 )
 
@@ -60,6 +61,7 @@ O conjunto de dados contém informações sobre:
 - Tempo de entrega  
 - Condições climáticas  
 - Nível de trânsito  
+- Avaliações dos clientes
 
 Os dados foram tratados para garantir consistência e confiabilidade nas análises.
 """
@@ -88,6 +90,15 @@ O dashboard está dividido em três principais visões:
 - Volume de pedidos por restaurante  
 - Tempo médio de preparo/entrega  
 - Comparação entre restaurantes  
+### 🔎 Operacional
+- Análise no volume de pedidos
+- Avaliação do tempo de entrega
+- Observar a eficiÊncia em múltiplas entregas
+### ⭐ Rating
+- Avaliação média distribuída no tempo de entrega
+- Observar avaliações em cada região
+- Compreender impacto de condições externas nas avaliações
+- Avaliar o impacto da experiÊncia do entregador nas avaliações
 """
 )
 
@@ -122,5 +133,8 @@ Desenvolvido como projeto de análise de dados com foco em tomada de decisão.
 - Pandas
 - Plotly
 - Streamlit
+Desenvolvido por [Igor Mendes](https://github.com/Ig0rMendes) ·
+    [LinkedIn](www.linkedin.com/in/igor-mendes-a50550239) ·
+    [Código-fonte](https://github.com/Ig0rMendes/curry_company)
 """
 )
