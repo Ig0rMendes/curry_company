@@ -1,0 +1,33 @@
+import pandas as pd
+import streamlit as st
+
+
+def sidebar_filters(df):
+    st.sidebar.header("Cury Company")
+    st.sidebar.image("assets/logo.png", width=120)
+
+    min_date = df['Order_Date'].min().date()
+    max_date = df['Order_Date'].max().date()
+
+    start_date = st.sidebar.date_input('Data inicial', min_date)
+    end_date = st.sidebar.date_input('Data final', max_date)
+
+    traffic_options = st.sidebar.multiselect(
+        'Condição de trânsito',
+        ['Low', 'Medium', 'High', 'Jam'],
+        default=['Low', 'Medium', 'High', 'Jam']
+    )
+
+    return start_date, end_date, traffic_options
+
+
+def apply_filters(df, date_range, traffic, weather):
+
+    start_date, end_date = date_range
+
+    df = df[
+        (df['Order_Date'] >= pd.to_datetime(start_date)) &
+        (df['Order_Date'] <= pd.to_datetime(end_date))
+    ]
+
+    return df
