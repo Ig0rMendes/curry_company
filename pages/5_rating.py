@@ -102,7 +102,7 @@ O gráfico revela um "penhasco" na satisfação: até 30 minutos, o rating se ma
 Entre 30 e 45 minutos o rating oscila sem recuperação clara, e curiosamente entregas ainda mais longas (45-50 min) apresentam notas levemente melhores — possível sinal de gestão de expectativa em atrasos maiores.
 Isso reforça os 30 minutos como o verdadeiro SLA-alvo da operação, sendo o ponto mais crítico a ser monitorado para evitar quedas bruscas na satisfação.
 
-Já quando se observa região, clima e trânsito, o cenário é bem mais estável: as médias de rating permanecem próximas de 4,6 em todas as condições, sugerindo que a operação lida bem com esses fatores externos. O mesmo vale para a idade do entregador, sem qualquer tendência de queda associada a faixas etárias específicas.
+Já quando se observa região, clima e trânsito, o cenário é bem mais estável: as médias de rating permanecem próximas de 4,6 em todas as condições, sugerindo que a operação lida bem com esses fatores externos. Para a idadedo do entregador, é avaliado que sua experiência impacta na menor quantidade de avaliações negativas.
 Isso ajuda a explicar o gap entre o rating médio (4,61) e o mínimo (2,50): mais do que dispersão aleatória, os casos mais críticos provavelmente refletem entregas concentradas justamente nos intervalos de maior tempo, apontando para falhas pontuais no processo em vez de um problema estrutural amplo.
 
 No conjunto, a leitura é clara: a experiência do cliente depende muito mais da eficiência logística do que de fatores externos. Isso reforça a definição de um SLA de entrega mais rígido, o acompanhamento próximo dos casos de maior atraso e o tempo de entrega como principal indicador de qualidade do serviço.
