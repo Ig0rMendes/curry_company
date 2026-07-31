@@ -4,4 +4,3 @@ plotly
 folium
 streamlit-folium
 numpy
-os
