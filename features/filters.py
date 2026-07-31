@@ -1,20 +1,13 @@
 import pandas as pd
 import streamlit as st
-from pathlib import Path
-
+import os
 
 def sidebar_filters(df):
+    st.sidebar.header("Cury Company")
 
-    logo_path = Path(__file__).parent / "assets" / "logo.png"
-
-    st.sidebar.image(logo_path, width=120)
-
-    st.sidebar.markdown(
-        "<h2 style='text-align: center;'>Cury Company</h2>",
-        unsafe_allow_html=True
-    )
-
-    st.sidebar.markdown("---")
+    # caminho seguro da imagem (funciona local e no Streamlit Cloud)
+    image_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'logo.png')
+    st.sidebar.image(image_path, width=120)
 
     min_date = df['Order_Date'].min().date()
     max_date = df['Order_Date'].max().date()
@@ -28,11 +21,15 @@ def sidebar_filters(df):
         default=['Low', 'Medium', 'High', 'Jam']
     )
 
-    st.sidebar.markdown("---")
-
-    st.sidebar.markdown(
-        "<p style='text-align: center; font-size: 12px;'>Powered by Igor Mendes</p>",
-        unsafe_allow_html=True
-    )
-
     return start_date, end_date, traffic_options
+
+
+def apply_filters(df, date_range, traffic, weather):
+    start_date, end_date = date_range
+
+    df = df[
+        (df['Order_Date'] >= pd.to_datetime(start_date)) &
+        (df['Order_Date'] <= pd.to_datetime(end_date))
+    ]
+
+    return df
