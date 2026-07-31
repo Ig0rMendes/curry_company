@@ -6,7 +6,7 @@ def sidebar_filters(df):
     st.sidebar.header("Cury Company")
 
     # caminho seguro da imagem (funciona local e no Streamlit Cloud)
-    image_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'logo.png')
+    image_path = os.path.join(os.path.dirname(__file__), '..', 'assets', 'Logo.png')
     st.sidebar.image(image_path, width=120)
 
     min_date = df['Order_Date'].min().date()
