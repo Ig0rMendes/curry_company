@@ -133,6 +133,7 @@ Desenvolvido como projeto de análise de dados com foco em tomada de decisão.
 - Pandas
 - Plotly
 - Streamlit
+
 Desenvolvido por [Igor Mendes](https://github.com/Ig0rMendes) ·
     [LinkedIn](www.linkedin.com/in/igor-mendes-a50550239) ·
     [Código-fonte](https://github.com/Ig0rMendes/curry_company)
